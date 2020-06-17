@@ -1,0 +1,25 @@
+@font-face { font-family: 'NEXON Lv1 Gothic OTF Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+html, body {
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+        background-color: lightgreen;
+
+    }
+}
+
+body{
+    background-image: url('./srcImage/indexBackgroundImg.jpg');
+    background-size: cover;
+    background-repeat : no-repeat;   
+
+}
+
+
+
+
+

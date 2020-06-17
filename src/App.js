@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState,useContext} from 'react';
+import styled from 'styled-components';
+import './1.css'
+import IndexPage from './pages/IndexPage';
+
+
+
+
+
 
 function App() {
+
+
+  const [name, setName] = useState('');
+
+  
+
+
+  const [showPage, setShowPage] = useState(0);
+
+
+  const Index = (index) =>{
+
+    switch(index){
+      case 0:
+        return(
+          <IndexPage />
+        )
+        
+        break;
+          case 2:
+        
+    }
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {Index(showPage)}
+    </>
   );
 }
 
-export default App;
+export default App; 
