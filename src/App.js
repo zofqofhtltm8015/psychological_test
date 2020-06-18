@@ -2,7 +2,7 @@ import React, {useState,useContext} from 'react';
 import styled from 'styled-components';
 import './1.css'
 import IndexPage from './pages/IndexPage';
-
+import PsychologyPage from './pages/PsychologyPage.js'
 
 
 
@@ -10,13 +10,8 @@ import IndexPage from './pages/IndexPage';
 
 function App() {
 
-
-  const [name, setName] = useState('');
-
   
-
-
-  const [showPage, setShowPage] = useState(0);
+const [showPage, setShowPage] = useState(0);
 
 
   const Index = (index) =>{
@@ -24,11 +19,13 @@ function App() {
     switch(index){
       case 0:
         return(
-          <IndexPage />
+          <IndexPage setShowpage={() =>setShowPage(1)} />
         )
-        
-        break;
-          case 2:
+      
+          default:
+        return(
+          <PsychologyPage page={index}/>
+        )
         
     }
 

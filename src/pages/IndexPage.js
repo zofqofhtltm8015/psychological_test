@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import IndexTitle from '../components/IndexTitle';
-
+import StartBtn from '../components/Start'
 
 const Indexpage  = styled.div `
     display:flex;
@@ -9,11 +9,12 @@ const Indexpage  = styled.div `
     align-items: center;
 
 `
-function  IndexPage(){
+function  IndexPage({setShowpage}){
+    console.log(setShowpage)
     return(
         <Indexpage>
               <IndexTitle />
-              <StartBtn showPage={showPage} />
+              <StartBtn setShowpage={setShowpage} />
       </Indexpage>
     )
 }

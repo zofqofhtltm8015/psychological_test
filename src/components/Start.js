@@ -1,6 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const StartBtn = styled.button`
+
+const Start = styled.button`
   outline: none;
   background-color:transparent;
   border: 3px solid grey;
@@ -18,12 +20,14 @@ const StartBtn = styled.button`
     color: white;
   }
 ` 
-function Start({setShowPage}){
+function StartBtn({setShowpage}){
+  console.log(setShowpage);
     return(
         <>
-                <StartBtn onClick={setShowPage} >시작하기!</StartBtn>
+        
+                <Start onClick={setShowpage} >시작하기!</Start>
         </>
     );
 }
 
-export default Start;
+export default StartBtn;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Indextitle = styled.div`
+export const Indextitle = styled.div`
 
   color: black;
   font-size: 30px;

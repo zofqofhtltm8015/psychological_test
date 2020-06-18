@@ -5,15 +5,16 @@ html, body {
     height: 100%;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and(max-width: 768px)  and (ori) {
     body {
         background-color: lightgreen;
 
     }
+
 }
 
 body{
-    background-image: url('./srcImage/indexBackgroundImg.jpg');
+    /* background-image: url('./srcImage/indexBackgroundImg.jpg'); */
     background-size: cover;
     background-repeat : no-repeat;   
 
