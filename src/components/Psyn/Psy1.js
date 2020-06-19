@@ -6,7 +6,7 @@ function Psy1(){
         <>
             <PsyAnswer>곧 세상의 종말이 다가옵니다. 당신은 하나의 동물을 구할 수 있습니다!</PsyAnswer>
             <PsyForm>
-                <Rabbit onClick={()=>{console.log("하")}} />
+                <Rabbit page={1} />
                 <Horse  />
                 <Reindeer />
                 <Sheep />

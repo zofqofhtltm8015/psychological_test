@@ -6,6 +6,7 @@ import horsePng from '../../srcImage/horse.png';
 import reindeerPng from '../../srcImage/reindeer.png';
 import sheepPng from '../../srcImage/sheep.png';
 
+
 const Image = styled.div`
     padding: 7.5%;
     margin-top: 130px;
@@ -14,13 +15,18 @@ const Image = styled.div`
     background-image: url('${props=>props.img}');
     background-size: cover;
     cursor: pointer;
+`;
 
-` 
+
+const click= (page) =>{
+
+    console.log(page);
+}
 
 
-export function Rabbit(){
+export function Rabbit({page}){
     return(
-            <Image  img={rabbitPng} />
+            <Image onClick={() =>click({page})} img={rabbitPng} />
     );
 }
 
